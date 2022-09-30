@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-OXTEbYDqaX2ZY/BOaZV/yFGChYHtrXH2nyXJ372n2Y8abBhrqacCEe+3qhSHtLjy" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/c9ef7d2399.js" crossorigin="anonymous"></script>
+    <title>Admin Dashboard</title>
+</head>
+
+<body class="bg-light">
+    <!-- Start Navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg bg-light shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-4" href="#">Kodein</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Course</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Challenge</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Event</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <img src="assets/user.png" class="nav-link" alt="User Image">
+                    </li> -->
+                </ul>
+                <div class="nav-item collapse navbar-collapse  justify-content-end ms-1" id="navbarNavDarkDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="assets/user.png" alt="User Image">
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-light">
+                                <li><a class="dropdown-item" href="#">Dashboard</a></li>
+                                <li><a class="dropdown-item" href="#">Pengaturan</a></li>
+                                <li><a class="dropdown-item" href="#">Log out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Start Hero -->
+    <section class="jumbotron shadow-sm">
+        <h1 class="display-4">Selamat Datang Rendi Pandu Perdana!</h1>
+        <p class="lead">Semoga aktivitas belajarmu menyenangkan.</p>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Sedang dipelajari</h5>
+                <div class="container border d-flex p-2 shadow-sm">
+                    <p class="card-text ">Dasar Pemrograman Javascript</p>
+                    <a href="#" class="btn">Lanjutkan</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- End Hero -->
+
+    <!-- Start Content -->
+    <section class="content m-5">
+        <div class="content-title d-flex">
+            <img src="assets/Books.png" alt="Books">
+            <span>Daftar Pembelajaran</span>
+        </div>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col-sm-6">
+                <div class="card mb-3 btn shadow-sm">
+                    <h5 class="card-title">Front End</h5>
+                    <img src="assets/Frontend.png" class="card-img-top" alt="HTML5">
+                    <div class="card-body">
+                        <p class="card-text">Siap menjadi front end developer di dunia kerja</p>
+                    </div>
+                    <p class="card-text"><small class="text-muted">5 pelajaran</small></p>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card mb-3 btn shadow-sm">
+                    <h5 class="card-title">Back End</h5>
+                    <img src="assets/Back End.png" class="card-img-top" alt="CSS3">
+                    <div class="card-body">
+                        <p class="card-text">Siap menjadi back end developer di dunia kerja</p>
+                    </div>
+                    <p class="card-text"><small class="text-muted">5 pelajaran</small></p>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card mb-3 btn shadow-sm">
+                    <h5 class="card-title">Cyber Security</h5>
+                    <img src="assets/Cyber Security.png" class="card-img-top" alt="Javascript">
+                    <div class="card-body">
+                        <p class="card-text">Siap menjadi cyber security tanpa kebobolan.</p>
+                    </div>
+                    <p class="card-text"><small class="text-muted">7 pelajaran</small></p>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card mb-3 btn shadow-sm">
+                    <h5 class="card-title">QA Engineer</h5>
+                    <img src="assets/QA Engineer.png" class="card-img-top" alt="React">
+                    <div class="card-body">
+                        <p class="card-text">Siap menjadi QA engineer berpengalaman.</p>
+                    </div>
+                    <p class="card-text"><small class="text-muted">10 pelajaran</small></p>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card mb-3 btn shadow-sm">
+                    <h5 class="card-title">HTML5</h5>
+                    <img src="assets/HTML5.png" class="card-img-top" alt="HTML5">
+                    <div class="card-body">
+                        <p class="card-text">Bahasa server side yang cocok digunakan untuk pengembangan web.</p>
+                    </div>
+                    <p class="card-text"><small class="text-muted">5 pelajaran</small></p>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card mb-3 btn shadow-sm">
+                    <h5 class="card-title">CSS3</h5>
+                    <img src="assets/CSS3.png" class="card-img-top" alt="CSS3">
+                    <div class="card-body">
+                        <p class="card-text">Bahasa yang digunakan untuk mendesign tampilan web.</p>
+                    </div>
+                    <p class="card-text"><small class="text-muted">5 pelajaran</small></p>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card mb-3 btn shadow-sm">
+                    <h5 class="card-title">Javascript</h5>
+                    <img src="assets/Javascript.png" class="card-img-top" alt="Javascript">
+                    <div class="card-body">
+                        <p class="card-text">Bahasa yang digunakan untuk membuat web menajadi interaktif.</p>
+                    </div>
+                    <p class="card-text"><small class="text-muted">7 pelajaran</small></p>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card mb-3 btn shadow-sm">
+                    <h5 class="card-title">React</h5>
+                    <img src="assets/React.png" class="card-img-top" alt="React">
+                    <div class="card-body">
+                        <p class="card-text">Librabry Javascript front-end yang banyak digunakan programmer global.</p>
+                    </div>
+                    <p class="card-text"><small class="text-muted">10 pelajaran</small></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Content -->
+
+    <!-- Other Activity -->
+
+    <!-- End Other Activity -->
+
+    <!-- Start Footer -->
+    <footer class="card text-center">
+        <!-- Grid container -->
+        <div class="container pt-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+                <!-- Github -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center text-dark p-3" style="background-color: rgba(255, 255, 255, 0);">
+            © 2020 Copyright:
+            <a class="text-dark" href="https://Kodein.com/">Kodeincom</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- End Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

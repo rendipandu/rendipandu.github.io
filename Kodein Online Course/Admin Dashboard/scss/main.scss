@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #fff;
+}
+
+.navbar {
+    .navbar-brand {
+        font-weight: 700;
+    }
+
+    .container,
+    .container-fluid,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        padding: 0;
+    }
+
+    .navbar-collapse {
+        flex-grow: 0;
+    }
+
+    .nav-link {
+        padding: 0;
+    }
+
+    .navbar-nav {
+        font-weight: 550;
+    }
+
+    li {
+        align-self: center;
+    }
+
+
+
+    li img {
+        padding: 5px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+
+}
+
+section.jumbotron {
+    width: 100%;
+    padding: 2rem 1rem;
+    background-color: #5876a3;
+
+    h1 {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 2rem;
+        font-weight: 700;
+        color: #fff;
+    }
+
+    p {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    p.lead {
+        color: #fff;
+    }
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm {
+        max-width: 100%;
+        border-radius: 0.375rem;
+        justify-content: space-between;
+    }
+
+    .btn {
+        background-color: #5876a3;
+        border-radius: 0.375rem;
+        color: #fff;
+    }
+
+    .btn:hover {
+        background-color: #3f5271;
+        color: #fff;
+        transition: all ease .5s;
+    }
+}
+
+.content {
+    .content-title img {
+        width: 25px;
+        height: auto;
+    }
+
+    .content-title span {
+        padding: 5px;
+        font-size: 1.2rem;
+        align-self: end;
+    }
+
+    .card {
+        width: 18rem;
+        height: 18rem;
+        border: 0;
+    }
+
+    .card:hover {
+        box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
+        transition: all ease .5s;
+    }
+
+    img {
+        align-self: center;
+        padding: 0px;
+        width: 80px;
+        height: auto;
+        box-sizing: border-box;
+    }
+}
+
+
+footer {
+    margin-top: 50px;
+    background-color: #fff;
+    box-shadow: 125rem 125rem 25rem 25rem rgba(0, 0, 0, 1);
+}
