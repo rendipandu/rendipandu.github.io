@@ -2,22 +2,15 @@ import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { github } from "../assets";
+import { github, vercel } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
-const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
+const ProjectCard = ({ index, name, description, tags, image, source_code_link, deployment_link }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <Tilt
-        option={{
-          max: 45,
-          scale: 1,
-          speed: 450
-        }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
-      >
+      <div className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
         <div className="relative w-full h-[230px]">
           <img
             src={image}
@@ -25,7 +18,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
             className="w-full h-full object-cover rounded-2xl"
           />
 
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+          <div className="absolute inset-0 flex justify-end m-3 card-img_hover gap-1">
             <div>
               <div
                 onClick={() => window.open(source_code_link, "blank")}
@@ -33,7 +26,20 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
               >
                 <img
                   src={github}
-                  alt="github"
+                  alt="Github"
+                  className="w-1/2 h-1/2 object-contain"
+                />
+              </div>
+            </div>
+
+            <div>
+              <div
+                onClick={() => window.open(deployment_link, "blank")}
+                className="white-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              >
+                <img
+                  src={vercel}
+                  alt="Vercel"
                   className="w-1/2 h-1/2 object-contain"
                 />
               </div>
@@ -53,7 +59,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
             </p>
           ))}
         </div>
-      </Tilt>
+      </div>
     </motion.div>
   )
 }
@@ -63,7 +69,7 @@ const Works = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>My work</p>
-        <h2 className={styles.sectionHeadText}>Projects .</h2>
+        <h2 className={styles.sectionHeadText}>Projects.</h2>
       </motion.div>
 
       <div className="w-full flex">
