@@ -15,6 +15,7 @@ import typescript from "./tech/typescript.webp";
 
 import republika from "./company/republika.webp"
 import mixtra from "./company/mixtra.webp"
+import bnis from "./company/bnis.webp"
 
 import thread from "./projects/thread.webp"
 import promptopia from "./projects/promptopia.webp"
@@ -36,6 +37,7 @@ export {
   typescript,
   republika,
   mixtra,
+  bnis,
   thread,
   promptopia,
   movieland,
